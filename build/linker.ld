@@ -1,6 +1,7 @@
 ENTRY(_start)
 
-SECTIONS {
+SECTIONS
+{
     /* Starts at LOADER_ADDR. */
     . = 0x8000;
     __start = .;
