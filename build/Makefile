@@ -28,7 +28,6 @@ HEADERS = $(wildcard $(KER_HEAD)/*.h)
 
 IMG_NAME=kernel.img
 
-
 build: $(OBJECTS) $(HEADERS)
 	echo $(OBJECTS)
 	$(CC) -T linker.ld -o $(IMG_NAME) $(LFLAGS) $(OBJECTS)
